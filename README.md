@@ -34,7 +34,17 @@ function swap(array, first_index, second_index) {
   // -- YOUR ANSWER HERE --
 }
 ```
-
+var array_of_numbers = [5,4,3,2,1,0]
+    
+    function swap(array,a,b){
+      
+      
+      var tmp=array[a];
+      array[a]=array[b];
+      array[b]=tmp;
+      
+      
+    }
 ### Write a function that reverses an array in place, using the above `swap()` function
 
 - Implement the function using only (but not necessarily all)
