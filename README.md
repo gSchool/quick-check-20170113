@@ -2,15 +2,14 @@
 
 - For this pop quiz, feel free to use your editor/repl.it to write and VERIFY your answer.
 - Paste your answer into the appropriate place below when you are done.
-- Your answer MUST work in the examples provided
+- *LOOK* at the examples provided to determine the expected behaviour of your function.
+- Your answer MUST work in the examples provided.
 
 ## Standard: Solve problems that require swapping
 
 ### Write a function that swaps two elements in an array
 
-- The function will swap the elements at the two given indexes
-- The array outside of the function must be affected by any changes
-- You cannot use scope outside of the function
+- DO NOT access scope outside of the function
 
 e.g.
 ```js
