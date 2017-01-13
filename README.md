@@ -32,6 +32,14 @@ console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
   // -- YOUR ANSWER HERE --
+    if (array.length >2){
+  var temp = array[first_index];
+  array[first_index] = array[second_index];
+  array[second_index] = temp
+  return array
+  }else{
+    return array
+  }
 }
 ```
 
@@ -58,5 +66,9 @@ console.log(evens) // [10, 4, 6, 8, 2]
 
 function reverse(array) {
   // -- YOUR ANSWER HERE --
+    for (var i = 0; i<(array.length/2); i++){
+    swap(array, i, array.length-i-1)
+  }
+  return array
 }
 ```
