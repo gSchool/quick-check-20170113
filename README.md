@@ -32,6 +32,25 @@ console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
   // -- YOUR ANSWER HERE --
+   if (array === []) {
+   return array;
+ }
+ if (first_index < 0) {
+   return array;
+ }
+ if (second_index < 0) {
+   return array;
+ }
+  let first_bucket = array[first_index]
+  let second_bucket = array[second_index]
+  for (var i=0; i<array.length; i++) {
+    if (i === first_index) {
+      array[i] =second_bucket;
+    }
+    if (i === second_index) {
+      array[i] = first_bucket;
+    }
+  }
 }
 ```
 
@@ -58,5 +77,14 @@ console.log(evens) // [10, 4, 6, 8, 2]
 
 function reverse(array) {
   // -- YOUR ANSWER HERE --
+   let length = array.length
+  let bucket = [];
+  
+
+  for(var i=0; i<length/2; i++) {
+    let first = i;
+    let second = array.length-1 -[i];
+    swap(array, first, second);  // calling function
+  }
 }
 ```
