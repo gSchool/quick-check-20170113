@@ -77,8 +77,14 @@ console.log(evens) // [10, 4, 6, 8, 2]
 
 function reverse(array) {
   // -- YOUR ANSWER HERE --
-    let bucket = [];
-  while(array.length>0) {
-    bucket.push 
+   let length = array.length
+  let bucket = [];
+  
+
+  for(var i=0; i<length/2; i++) {
+    let first = i;
+    let second = array.length-1 -[i];
+    swap(array, first, second);  // calling function
+  }
 }
 ```
