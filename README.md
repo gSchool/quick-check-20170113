@@ -29,9 +29,9 @@ swap(empty, 1, 3)
 console.log(empty) // []
 
 var one = [1]
-swap(one, 0, -3)
+swap(one, 0, -1)
 console.log(one) // [1]
-swap(one, -3, 0)
+swap(one, -1, 0)
 console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
