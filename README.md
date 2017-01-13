@@ -11,7 +11,6 @@
 
 - DO NOT access scope outside of the function
 
-e.g.
 ```js
 var numbers = [2, 1]
 swap(numbers, 1, 0)
@@ -46,7 +45,6 @@ function swap(array, first_index, second_index) {
   - the `Math` library
 - The function must be as efficient as possible
 
-e.g.
 ```js
 var odds = [3, 9, 7, 5]
 console.log(odds) // [3, 9, 7, 5]
