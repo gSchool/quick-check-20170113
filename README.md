@@ -17,9 +17,9 @@ var numbers = [2, 1]
 swap(numbers, 1, 0)
 console.log(numbers) // [1, 2]
 
-var objects = [{name: "Busta"}, {name: "Carey"}, {name: "Mariah"}, {name: "Rhymes"}]
+var objects = [{first_name: "Busta"}, {last_name: "Carey"}, {first_name: "Mariah"}, {last_name: "Rhymes"}]
 swap(objects, 1, 3)
-console.log(objects) // [{name: "Busta"}, {name: "Rhymes"}, {name: "Mariah"}, {name: "Carey"}]
+console.log(objects) // [{first_name: "Busta"}, {last_name: "Rhymes"}, {first_name: "Mariah"}, {last_name: "Carey"}]
 
 var empty = []
 swap(empty, 1, 3)
