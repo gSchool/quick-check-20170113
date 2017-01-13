@@ -31,7 +31,18 @@ swap(one, -1, 0)
 console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
-  // -- YOUR ANSWER HERE --
+  var objects = [{first_name: "Busta"}, {last_name: "Carey"}, {first_name: "Mariah"}, {last_name: "Rhymes"}];
+
+swap(objects, 1, 3);
+
+function swap(arrayObj, first_index, second_index) {
+  for(let i = 0; i > arrayObj.length; ++i){
+    var temp = arrayObj[first_index];
+    arrayObj[first_index] = arrayObj[second_index];
+    arrayObj[second_index] = temp;
+  }
+  console.log(arrayObj);
+}
 }
 ```
 
