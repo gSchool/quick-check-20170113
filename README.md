@@ -8,6 +8,15 @@
 ## Standard: Solve problems that require swapping
 
 ### Write a function that swaps two elements in an array
+It was just starting to click!
+
+swap(nums)
+function swap(arr,index1,index2){
+ for(i=0; i<arr.length; i++){
+    
+ }
+  console.log(arr[1])
+}
 
 - DO NOT access scope outside of the function
 
