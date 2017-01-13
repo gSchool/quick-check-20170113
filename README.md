@@ -30,8 +30,11 @@ console.log(one) // [1]
 swap(one, -1, 0)
 console.log(one) // [1]
 
-function swap(array, first_index, second_index) {
-  // -- YOUR ANSWER HERE --
+function swap(arr, index_1, index_2) {
+  let temp = [];
+  temp.index_1 = arr.index_1;
+  arr.index_1 = arr.index_2
+  arr.index_2 = arr.index_1
 }
 ```
 
