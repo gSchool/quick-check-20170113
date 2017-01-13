@@ -31,7 +31,10 @@ swap(one, -1, 0)
 console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
-  // -- YOUR ANSWER HERE --
+  let tmp1 = array[first_index];
+  let tmp2 = array[second_index];
+  array.splice(first_index, 1, tmp2);
+  array.splice(second_index, 1, tmp1);
 }
 ```
 
