@@ -30,9 +30,18 @@ console.log(one) // [1]
 swap(one, -1, 0)
 console.log(one) // [1]
 
-function swap(array, first_index, second_index) {
-  // -- YOUR ANSWER HERE --
-}
+function swap(array, first_index, second_index) {  
+  var array1 = [2, 1];
+  function swap(array, first_index, second_index) {
+   let temp = [ ];
+   while (temp.length = array.length) {
+    temp.push(array.shift());
+    console.log("temp is " + temp)
+    }
+  }
+
+swap(array1, 1, 0);
+
 ```
 
 ### Write a function that reverses an array in place, using the above `swap()` function
