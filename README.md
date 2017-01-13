@@ -31,7 +31,9 @@ swap(one, -1, 0)
 console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
-  // -- YOUR ANSWER HERE --
+  var store = array[first_index]
+  array[first_index] = array[second_index] 
+  array[second_index] = store
 }
 ```
 
