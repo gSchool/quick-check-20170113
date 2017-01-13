@@ -1,6 +1,6 @@
 # Quick Check
 
-- For this pop quiz, feel free to use your editor/repl.it to write your answer.
+- For this pop quiz, feel free to use your editor/repl.it to write and VERIFY your answer.
 - Paste your answer into the appropriate place below when you are done.
 - Your answer MUST work in the examples provided
 
@@ -8,10 +8,8 @@
 
 ### Write a function that swaps two elements in an array
 
-- The function will take an array and two indexes
-- The function will then swap the elements at those two indexes
-- If the indexes are invalid, do nothing
-- The array outside of the function reflect this change
+- The function will swap the elements at the two given indexes
+- The array outside of the function must be affected by any changes
 - You cannot use scope outside of the function
 
 e.g.
@@ -41,13 +39,13 @@ function swap(array, first_index, second_index) {
 
 ### Write a function that reverses an array in place, using the above `swap()` function
 
-- The function will take an array
 - Implement the function using only
-  - basic operations (`[]`, `+`, `-`, `++`, etc.)
+  - basic operations (`[]`, `+`, `-`, `++`, `let`, etc.)
   - loops
   - `Array.length`
   - the `swap()` function that you wrote above
   - the `Math` library
+- The function must be as efficient as possible
 
 e.g.
 ```js
