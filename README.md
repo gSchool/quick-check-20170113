@@ -31,7 +31,16 @@ swap(one, -1, 0)
 console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
-  // -- YOUR ANSWER HERE --
+  if(first_index === undefined){
+    console.log("Your first index is invalid");
+  } else if (second_index === undefined) {
+    console.log("Your second index is invalid");
+  } else {
+    let tmp = array[first_index];
+    let tmp2 = array[second_index]
+    array[first_index] = array[second_index];
+    array[second_index] = array[first_index];
+  }
 }
 ```
 
@@ -57,6 +66,10 @@ reverse(evens)
 console.log(evens) // [10, 4, 6, 8, 2]
 
 function reverse(array) {
-  // -- YOUR ANSWER HERE --
+  let j = array.length;
+  for(let i = 0; i < array.length; i++){
+    swap(array, i, j)
+    j -= 1;
+  }
 }
 ```
