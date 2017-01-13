@@ -59,6 +59,12 @@ reverse(evens)
 console.log(evens) // [10, 4, 6, 8, 2]
 
 function reverse(array) {
-  // -- YOUR ANSWER HERE --
+  let store = []
+  for(i=0;i<array.length;i++){
+    store[i] = array[array.length-i-1]
+  }
+  for(i=0;i<store.length;i++){
+    array[i] = store[i]
+  }
 }
 ```
