@@ -31,7 +31,11 @@ swap(one, -1, 0)
 console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
-  // -- YOUR ANSWER HERE --
+  if (first_index >= 0 && second_index >= 0 && first_index < array.length && second_index < array.length) {
+    let tmp = array[first_index];
+    array[first_index] = array[second_index];
+    array[second_index] = tmp;
+  }
 }
 ```
 
@@ -57,6 +61,8 @@ reverse(evens)
 console.log(evens) // [10, 4, 6, 8, 2]
 
 function reverse(array) {
-  // -- YOUR ANSWER HERE --
+  for (let i = 0; i < array.length/2; i++) {
+    swap(array, i, array.length-1-i);
+  }
 }
 ```
