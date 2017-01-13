@@ -39,7 +39,7 @@ function swap(array, first_index, second_index) {
 
 ### Write a function that reverses an array in place, using the above `swap()` function
 
-- Implement the function using only
+- Implement the function using only (but not necessarily all)
   - basic operations (`[]`, `+`, `-`, `++`, `let`, etc.)
   - loops
   - `Array.length`
