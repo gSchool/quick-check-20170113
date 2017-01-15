@@ -30,17 +30,18 @@ console.log(one) // [1]
 swap(one, -1, 0)
 console.log(one) // [1]
 
-function swap(array, first_index, second_index) {  
-  var array1 = [2, 1];
-  function swap(array, first_index, second_index) {
-   let temp = [ ];
-   while (temp.length = array.length) {
-    temp.push(array.shift());
-    console.log("temp is " + temp)
+function swap(array, first_index, second_index) {
+      var bucket1 = array[first_index];
+      var bucket2 = array[second_index];
+  for (let i = 0; i < array.length; i++) {
+    if (i === first_index) {
+      array[i] = bucket2;
+    } if ( i === second_index ) {
+      array[i] = bucket1;
     }
   }
-
-swap(array1, 1, 0);
+  return array;
+}
 
 ```
 
