@@ -31,8 +31,18 @@ swap(one, -1, 0)
 console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
-  // -- YOUR ANSWER HERE --
+      var bucket1 = array[first_index];
+      var bucket2 = array[second_index];
+  for (let i = 0; i < array.length; i++) {
+    if (i === first_index) {
+      array[i] = bucket2;
+    } if ( i === second_index ) {
+      array[i] = bucket1;
+    }
+  }
+  return array;
 }
+
 ```
 
 ### Write a function that reverses an array in place, using the above `swap()` function
