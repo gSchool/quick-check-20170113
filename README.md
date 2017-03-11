@@ -30,12 +30,11 @@ console.log(one) // [1]
 swap(one, -1, 0)
 console.log(one) // [1]
 
-function swap(array, first_index, second_index) {
+function swap(array, idx1, idx2) {
   if (array.length > 1) {
-    let tmp1 = array[first_index];
-    let tmp2 = array[second_index];
-    array.splice(first_index, 1, tmp2);
-    array.splice(second_index, 1, tmp1);
+     let first = array[idx1];
+     array[idx1] = array[idx2];
+     array[idx2] = first;
   }
 }
 ```
@@ -62,6 +61,9 @@ reverse(evens)
 console.log(evens) // [10, 4, 6, 8, 2]
 
 function reverse(array) {
-  // -- YOUR ANSWER HERE --
+  for (var i = 0; i < (array.length / 2); i++) {
+    let idx2 = array.length - 1 - i;
+    swap(array, i, idx2)
+  }
 }
 ```
