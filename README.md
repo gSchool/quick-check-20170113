@@ -63,7 +63,11 @@ console.log(evens) // [10, 4, 6, 8, 2]
 // Hey, the world has evolved into the 21st century :/
 
 function reverse(array) {
-  return array.reverse()
+  let i = 0
+  while ( i < ((array.length - 1) / 2)) {
+    swap(array, i, (array.length - i - 1))
+    i++
+  }
 }
 reverse(evens)
 ```
