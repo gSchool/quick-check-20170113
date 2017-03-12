@@ -31,8 +31,12 @@ swap(one, -1, 0)
 console.log(one) // [1]
 
 function swap(array, first_index, second_index) {
-  // -- YOUR ANSWER HERE --
+  var temp = array[first_index]
+  array[first_index] = array[second_index]
+  array[second_index] = temp
+  return array
 }
+swap(objects, 1, 3)
 ```
 
 ### Write a function that reverses an array in place, using the above `swap()` function
@@ -56,7 +60,14 @@ console.log(evens) // [2, 8, 6, 4, 10]
 reverse(evens)
 console.log(evens) // [10, 4, 6, 8, 2]
 
+// Hey, the world has evolved into the 21st century :/
+
 function reverse(array) {
-  // -- YOUR ANSWER HERE --
+  let i = 0
+  while ( i < ((array.length - 1) / 2)) {
+    swap(array, i, (array.length - i - 1))
+    i++
+  }
 }
+reverse(evens)
 ```
