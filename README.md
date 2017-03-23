@@ -73,3 +73,63 @@ function reverse(array) {
   }
 }
 ```
+
+
+new answers:
+
+```js
+let swapArray1 = [1, 2, 3, 4, 5]
+let swapArray2 = [6, 7, 8, 9, 10]
+
+let reverseArray = [1, 2, 3]
+
+let bubbleArray = [4, 8, 2, 9, 3, 5, 7, 6, 8, 1]
+
+swap(swapArray1, swapArray2)
+
+reverse(reverseArray)
+
+bubbleSort(bubbleArray)
+
+function swap(arr1, arr2) {
+  console.log("First Array was: " + arr1)
+  console.log("Second Array was: " + arr2)
+  let arr3 = [];
+  for(let i = 0; i < arr1.length; i++){
+    arr3[i] = arr1[i];
+  }
+  for(let i = 0; i < arr2.length; i++){
+    arr1[i] = arr2[i]
+  }
+  for(let i = 0; i < arr2.length; i++){
+    arr2[i] = arr3[i]
+  }
+  console.log("First Array is now: " + arr1)
+  console.log("Second Array is now: " + arr2)
+}
+
+function reverse(arr1){
+  console.log("Array was: " + arr1)
+  let arr3 = [];
+  let size = arr1.length
+  for(let i = 0; i < size; i++){
+    arr3[i] = arr1[size-(i+1)]
+  }
+  arr1 = arr3
+  console.log("Array is now: " + arr1)
+}
+
+function bubbleSort(arr1){
+  console.log("Array was: " + arr1)
+  for(let q = arr1.length; q > 0; q--){
+    for(let i = 0; i < arr1.length; i++){
+      if(arr1[i] > arr1[i + 1]){
+        let breaker = arr1[i + 1]
+        arr1[i + 1] = arr1[i]
+        arr1[i] = breaker
+      }
+    }
+  }
+  console.log("Array is now: " + arr1)
+}
+```
